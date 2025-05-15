@@ -91,7 +91,7 @@ const SiteNavbar = () => {
             {/* NAV FOR MOBILE  */}
             <nav className="flex items-center lg:hidden justify-between py-9 relative">
                 <div className="logo_container">
-                    <img src="/images/logo.png" alt="logo" />
+                    <img src="/images/Hero/logo.png" alt="logo" className="h-16"/>
                 </div>
                 <div className="menuBtn">
                     <button className="text-brandGreen text-2xl" onClick={() => setMobileActive(!mobileActive)}>
