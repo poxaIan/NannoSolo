@@ -17,54 +17,55 @@ const SiteNavbar = () => {
             {/* NAVITEMS FOR DESKTOP  */}
             <nav className="lg:flex items-center hidden  justify-between py-9 relative">
                 <div className="logo_container">
-                    <img src="/images/logo.png" alt="logo" />
+                    <img src="/images/Hero/logo.png" alt="logo" className="h-24" />
                 </div>
+
 
                 <div className="nav_items">
                     <ul className="lg:flex items-center gap-[30px] hidden   md:text-xs  md:gap-4 lg:text-sm xl:gap-[30px] xl:text-base ">
                         <li>
                             <Link
                                 href={"/"}
-                                className={`${currentPath === "/" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center  font-poppins font-medium capitalize `}
+                                className={`${currentPath === "/" ? "text-brandYellow border-b border-brandYellow" : "text-black"} text-2xl p-[10px] text-center  font-poppins font-medium capitalize `}
                             >
-                                Home
+                                Início
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href={"/team"}
-                                className={`${currentPath === "/team" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
+                                className={`${currentPath === "/team" ? "text-brandYellow border-b border-brandYellow" : "text-black"} text-2xl p-[10px] text-center font-poppins font-medium capitalize `}
                             >
-                                Team
+                                Equipe
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href={"/services"}
-                                className={`${currentPath === "/services" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
+                                className={`${currentPath === "/services" ? "text-brandYellow border-b border-brandYellow" : "text-black"} text-2xl p-[10px] text-center font-poppins font-medium capitalize `}
                             >
-                                Service
+                                Serviços
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href={"/projects"}
-                                className={`${currentPath === "/projects" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
+                                className={`${currentPath === "/projects" ? "text-brandYellow border-b border-brandYellow" : "text-black"} text-2xl p-[10px] text-center font-poppins font-medium capitalize `}
                             >
-                                Projects
+                                Projetos
                             </Link>
                         </li>
                         <li>
                             <Link
                                 href={"/testimonials"}
-                                className={`${currentPath === "/testimonials" ? "text-brandGreen border-b border-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
+                                className={`${currentPath === "/testimonials" ? "text-brandYellow border-b border-brandYellow" : "text-black"} text-2xl p-[10px] text-center font-poppins font-medium capitalize `}
                             >
-                                Testimonials
+                                Relatos
                             </Link>
                         </li>
 
                         <li>
-                            <Link
+                            {/* <Link
                                 href={""}
                                 className="font-poppins  font-medium text-black py-[10px] px-6 border-brandGreen border rounded-lg hover:border-transparent hover:bg-brandGreen duration-300 hover:text-white"
                             >
@@ -78,7 +79,7 @@ const SiteNavbar = () => {
                             >
 
                                 Register
-                            </Link>
+                            </Link>*/}
                         </li>
 
                     </ul>
@@ -111,7 +112,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                            onClick={() => setMobileActive(!mobileActive)}
+                                onClick={() => setMobileActive(!mobileActive)}
                                 href={"/team"}
                                 className={`${currentPath === "/team" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -120,7 +121,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                            onClick={() => setMobileActive(!mobileActive)}
+                                onClick={() => setMobileActive(!mobileActive)}
                                 href={"/services"}
                                 className={`${currentPath === "/services" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -129,7 +130,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                            onClick={() => setMobileActive(!mobileActive)}
+                                onClick={() => setMobileActive(!mobileActive)}
                                 href={"/projects"}
                                 className={`${currentPath === "/projects" ? "text-brandGreen " : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >
@@ -138,7 +139,7 @@ const SiteNavbar = () => {
                         </li>
                         <li>
                             <Link
-                            onClick={() => setMobileActive(!mobileActive)}
+                                onClick={() => setMobileActive(!mobileActive)}
                                 href={"/testimonials"}
                                 className={`${currentPath === "/testimonials" ? "text-brandGreen" : "text-black"} p-[10px] text-center font-poppins font-medium capitalize `}
                             >

@@ -1,17 +1,17 @@
 import Brand from "./Brand";
 
 const Hero = () => {
-  const title = "Bem-vindo ao nosso laboratório de ensaios!";
-  const description = "Conheça nossos serviços técnicos especializados em análise e ensaios de materiais.";
+  const title = "Consultoria e controle tecnológico";
+  const description = "Atuamos com precisão técnica e soluções inovadoras para garantir a qualidade nas construções públicas e privadas.";
 
   // Caminhos das imagens locais em /public/images/
-  const image1 = "/images/Densidade In Situ.jpg";
+  const image1 = "/images/Ensaio de Moldagem de CP de concreto.jpeg";
   const image2 = "/images/Densidade máxima em CBUQ - Densímetro não nuclear.jpeg";
   const image3 = "/images/Determinação de IRI com o equipamento Merlin.jpg";
   const image4 = "/images/ensaio_calda_cimento.jpeg";
 
   return (
-    <section className="hero_bg pt-36 pb-9">
+    <section className="pt-36 pb-9 bg-[#898a8b]">
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center container mx-auto">
           <div className="content_container mt-5 md:mt-0">
