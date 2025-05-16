@@ -62,10 +62,10 @@ const AllProjects = async () => {
   const projects = await getData();
 
   return (
-    <section className='pt-10 pb-10 bg-bgGrayTeam text-white'>
+    <section className='pt-10 pb-10 bg-bgGrayTeam text-white '>
       <div className="container">
         <div className="content text-center">
-          <h2 className="sub_heading mt-4 max-w-[500px] mx-auto text-white">
+          <h2 className="font-bold font_poppins text-4xl mt-4  mx-auto text-white">
             Veja Nossos Últimos Clientes
           </h2>
         </div>

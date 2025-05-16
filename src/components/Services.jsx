@@ -57,10 +57,10 @@ const servicesData = [
 
 const Services = () => {
   return (
-    <section className='pt-10 pb-10'>
+    <section className='pt-10 pb-10 bg-bgGrayTeam'>
       <div className="container">
         <div className="content">
-          <h2 className="sub_heading mt-4 max-w-[600px]">Oferecemos os Melhores Serviços</h2>
+          <h2 className="font-bold font_poppins text-4xl text-center mt-4 text-white">Oferecemos os Melhores Serviços</h2>
         </div>
 
         <div className="service_card_container grid grid-cols-1 md:grid-cols-2 gap-8 mt-[50px]">

@@ -15,8 +15,9 @@ module.exports = {
         jakartaSans: ["Plus Jakarta Sans", "sans-serif"],
       },
       colors: {
+        bgmenu: "#acacad",
         bgGrayTeam: "#585859",
-        brandYellow: "#F7C500FF",
+        brandYellow: "#F7C500FF", //amarelo logo
         brandGreen: "#383839", //botao conheça nossos servicos
         greenLite: "#D7F5DC",
         bgGreenLite: "#6D6E70", //segundo fundo home

@@ -5,14 +5,14 @@ import Team from "@/components/Team";
 const TeamPage = () => {
   return (
     <>
-      <div className=" pt-10 pb-10 bg-bgGray">
+      {/*<div className=" pt-10 pb-10 bg-bgGray">
         <div className="container">
           <h1 className='heading'>Team</h1>
           <div className="navigation">
             <Breadcrumb />
           </div>
         </div>
-      </div>
+      </div>*/}
 
 
       <Team />

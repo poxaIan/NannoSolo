@@ -39,29 +39,27 @@ const FeatureProject = () => {
   const withoutFirstProject = featureProjects.slice(1);
 
   return (
-    <section className="pt-16 pb-20 bg-bgGreenLite">
+    <section className="pt-16 bg-bgGreenLite">
       <div className="container">
         <div className="feature_project_content">
-          <p className="tagline_text">Projetos em Destaque</p>
-          <h2 className="sub_heading mt-6 max-w-[500px]">
-            Soluções perfeitas para o crescimento do seu negócio
-          </h2>
+          <p className="text-4xl  sm:text-[50px] font-bold font_poppins text-white">Projetos em Destaque</p>
+
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-[30px] mt-[70px] projects_container">
-          <div className="first_project mb-5 lg:mb-0">
+          <div className="first_project">
             <div className="porject">
               <Link href={featureProjects[0].live}>
                 <img
-                  className="lg:h-[531px] w-full rounded-[20px] object-cover"
+                  className="lg:h-[482px] w-full  object-cover"
                   src={featureProjects[0].image}
                   alt={featureProjects[0].title}
                 />
               </Link>
-              <p className="text-brandSecound/80 font_poppins font-normal text-sm mt-4">
+              <p className="text-black font_poppins font-normal text-sm mt-4">
                 App Design - {parseDate(featureProjects[0].updated_at)}
               </p>
-              <h4 className="text-2xl font-bold font_poppins text-brandSecound mt-[10px]">
+              <h4 className="text-2xl font-bold font_poppins text-black mt-[10px]">
                 {featureProjects[0].title}
               </h4>
             </div>
@@ -73,21 +71,28 @@ const FeatureProject = () => {
                 <div key={index} className="porject">
                   <Link href={project.live}>
                     <img
-                      className="rounded-[20px]"
+                      className=""
                       src={project.image}
                       alt={project.title}
                     />
                   </Link>
-                  <p className="text-brandSecound/80 font_poppins font-normal text-sm mt-4">
+                  <p className="text-black font_poppins font-normal text-sm mt-4">
                     App Design - {parseDate(project.created_at)}
                   </p>
-                  <h4 className="text-lg font-bold font_poppins text-brandSecound text-left mt-[10px] max-w-[263px]">
+                  <h4 className="text-lg font-bold font_poppins text-black text-left mt-[10px] max-w-[263px]">
                     {project.title}
                   </h4>
                 </div>
               ))}
             </div>
           </div>
+        </div>
+
+        
+        <div>
+          <h2 className="sub_heading text-4xl text-center py-16 text-white">
+            Soluções perfeitas para o crescimento do seu negócio
+          </h2>
         </div>
       </div>
     </section>

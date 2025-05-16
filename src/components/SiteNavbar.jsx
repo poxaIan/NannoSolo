@@ -9,7 +9,7 @@ const SiteNavbar = () => {
     const [mobileActive, setMobileActive] = useState(false);
 
     return (
-        <div className="w-full bg-white shadow-sm z-50 relative">
+        <div className="w-full bg-bgmenu shadow-sm z-50 relative">
 
             <div className="container mx-auto">
                 {/* NAVITEMS FOR DESKTOP */}
@@ -25,8 +25,7 @@ const SiteNavbar = () => {
                                 { href: "/", label: "Início" },
                                 { href: "/team", label: "Equipe" },
                                 { href: "/services", label: "Serviços" },
-                                { href: "/projects", label: "Clientes" },
-                                { href: "/testimonials", label: "Relatos" },
+                                { href: "/projects", label: "Portfólio" },
                             ].map(({ href, label }) => (
                                 <li key={href}>
                                     <Link

@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
-import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaLinkedinIn } from 'react-icons/fa'
+import { PiInstagramLogoFill } from "react-icons/pi"
+import { MdEmail } from "react-icons/md"
 
 const SiteFooter = () => {
     return (
@@ -14,19 +15,17 @@ const SiteFooter = () => {
                             Algum texto institucional sobre a empresa. Uma breve descrição para ajudar as pessoas a entender melhor quem somos.
                         </p>
                         <div className="social_links flex items-center justify-start gap-4 mt-5">
-                            <Link href={"/"} className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
-                                <FaFacebookF />
-                            </Link>
-                            <Link href={"/"} className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
-                                <FaTwitter />
-                            </Link>
-                            <Link href={"/"} className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
+                            <Link href={"https://www.linkedin.com/in/ian-miranda-gomes-de-souza-3257a1222/"} target="_blank" className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
                                 <FaLinkedinIn />
                             </Link>
-                            <Link href={"/"} className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
+                            <Link href={"https://www.instagram.com/"} target="_blank" className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
                                 <PiInstagramLogoFill />
                             </Link>
+                            <Link href={"mailto:contato@nannoscic.com"} className='w-10 h-10 rounded-full bg-white text-black flex items-center justify-center'>
+                                <MdEmail />
+                            </Link>
                         </div>
+
                     </div>
 
                     <div className="quick_links">
@@ -35,9 +34,8 @@ const SiteFooter = () => {
                         </div>
                         <div className="links mt-4 flex flex-col items-start justify-start gap-6">
                             <Link href={"/services"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Serviços</Link>
-                            <Link href={"/portfolio"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Portfolio</Link>
-                            <Link href={"/about"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Sobre Nós</Link>
-                            <Link href={"/contact"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Contato</Link>
+                            <Link href={"/projects"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Portfolio</Link>
+                            <Link href={"/team"} className='font_avenir font-normal text-lg text-black hover:text-white duration-300'>Sobre Nós</Link>
                         </div>
                     </div>
 

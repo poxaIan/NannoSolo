@@ -7,22 +7,25 @@ const imagesData = [
 
 const Brand = () => {
   return (
-    <div className="py-0 bg-white">
-      <div className="grid grid-cols-2 sm:flex items-center justify-between justify-items-center gap-y-10 container">
-        {imagesData.map((brand, index) => (
-          <React.Fragment key={brand.id}>
+    <div className="py-8 bg-white">
+      <div className="container mx-auto flex justify-center items-center gap-10">
+        {/* PARCERIAS + linha */}
+        <div className="flex items-center gap-4">
+          <span className="text-5xl font-bold text-black">PARCERIAS</span>
+          <div className="h-36 w-[4px] bg-black" />
+        </div>
+
+        {/* Logos */}
+        <div className="flex items-center gap-10">
+          {imagesData.map((brand) => (
             <img
+              key={brand.id}
               src={brand.image}
               alt={brand.name}
               className="w-96 h-48 object-contain"
             />
-            {index === 0 && (
-              <span className="text-3xl font-bold text-black mx-4">
-                PARCERIAS
-              </span>
-            )}
-          </React.Fragment>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
