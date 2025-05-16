@@ -1,24 +1,27 @@
 const WorkList = () => {
   const workLists = [
     {
-      icon: "/icons/Activity.png",
-      title: "Análises Técnicas",
-      des: "Realizamos ensaios técnicos para avaliação de solos, asfaltos e concreto com alta precisão."
+      icon: "/icons/investigation.png",
+      title: "Ensaios e Investigação de Campo",
+      des: "Realizamos sondagens, análises granulométricas, ensaios de compactação e ISC para avaliar as características físicas e mecânicas dos solos com alto rigor técnico.",
+      cta: "Saiba Mais"
     },
     {
-      icon: "/icons/stats.png",
-      title: "Relatórios Detalhados",
-      des: "Fornecemos laudos completos com gráficos, tabelas e interpretações técnicas de fácil entendimento."
+      icon: "/icons/report.png",
+      title: "Laudos Técnicos e Interpretações",
+      des: "Entregamos relatórios completos com tabelas, gráficos e interpretações técnicas baseadas nas normas vigentes, facilitando decisões assertivas em obra.",
+      cta: "Ver Exemplo de Laudo"
     },
     {
-      icon: "/icons/project.png",
+      icon: "/icons/blueprint.png",
       title: "Acompanhamento de Projetos",
-      des: "Monitoramos o desempenho de obras civis, oferecendo suporte com dados confiáveis para tomada de decisão."
+      des: "Monitoramos o desempenho de obras civis, oferecendo suporte com dados confiáveis para tomada de decisão.",
+      cta: "Conheça Nosso Processo →"
     }
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-brandYellow">
       <div className="container">
         <div className="section_content">
           <p className="mb-4 tagline_text">O que fazemos</p>
@@ -28,21 +31,25 @@ const WorkList = () => {
         </div>
         <div className="grid md:grid-cols-3 items-center mt-11">
           {workLists.map((item, index) => (
-            <div key={index} className="py-[50px] px-[30px] card md:max-w-[380px]">
-              <img src={item.icon} alt="ícone" />
-              <h3 className="font-poppins font-semibold text-2xl text-left text-black mt-4">
+            <div key={index} className="py-[50px] px-[30px] card md:max-w-[380px] h-full flex flex-col items-start justify-start">
+              <img src={item.icon} alt="ícone" className="w-14 h-14" />
+
+              <h3 className="font-poppins font-semibold text-2xl text-black mt-4">
                 {item.title}
               </h3>
+
               <p className="font_avenir font-normal text-lg text-black mt-4">
                 {item.des}
               </p>
-              <button className="font_avenir text-lg font-normal rounded-lg bg-transparent hover:bg-greenLite duration-300 px-5 py-[15px] mt-11">
+
+              <button className="font_avenir text-lg font-normal rounded-lg bg-transparent bg-white duration-300 px-5 py-[15px] mt-auto">
                 <span className="flex items-center gap-2">
-                  Saiba mais
+                  {item.cta}
                   <img src="/icons/arrow.png" alt="seta" />
                 </span>
               </button>
             </div>
+
           ))}
         </div>
       </div>

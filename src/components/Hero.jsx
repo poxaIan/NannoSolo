@@ -1,7 +1,7 @@
 import Brand from "./Brand";
 
 const Hero = () => {
-  const title = "Consultoria e controle tecnológico";
+  const title = "Consultoria e Controle Tecnológico";
   const description = "Atuamos com precisão técnica e soluções inovadoras para garantir a qualidade nas construções públicas e privadas.";
 
   const image1 = "/images/Ensaio de Moldagem de CP de concreto.jpeg";

@@ -7,8 +7,8 @@ const StatList = () => {
   };
 
   return (
-    <section className='py-10 sm:py-16'>
-      <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-[30px]">
+    <section className='py-0 sm:py-0'>
+      {/* <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-[30px]">
 
         <div className="w-full px-[47px] py-[71px] rounded-[20px] shadow-statsShadow flex items-center justify-center flex-col stats">
           <img src="/icons/stats.png" alt="followers" />
@@ -34,7 +34,7 @@ const StatList = () => {
           <p className='font-poppins font-medium text-[16px] text-black mt-1 text-center'>Projetos</p>
         </div>
 
-      </div>
+      </div>*/}
     </section>
   );
 };
