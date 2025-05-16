@@ -25,7 +25,7 @@ const SiteNavbar = () => {
                                 { href: "/", label: "Início" },
                                 { href: "/team", label: "Equipe" },
                                 { href: "/services", label: "Serviços" },
-                                { href: "/projects", label: "Projetos" },
+                                { href: "/projects", label: "Clientes" },
                                 { href: "/testimonials", label: "Relatos" },
                             ].map(({ href, label }) => (
                                 <li key={href}>
@@ -57,11 +57,11 @@ const SiteNavbar = () => {
                 {mobileActive && (
                     <ul className="bg-greenLite absolute text-lg top-[100%] w-full pt-7 pl-8 pb-16 grid grid-cols-1 gap-5 rounded-lg transition-all duration-300 shadow-md shadow-greenLite z-50">
                         {[
-                            { href: "/", label: "Home" },
-                            { href: "/team", label: "Team" },
-                            { href: "/services", label: "Service" },
-                            { href: "/projects", label: "Projects" },
-                            { href: "/testimonials", label: "Testimonials" },
+                            { href: "/", label: "Início" },
+                            { href: "/team", label: "Equipe" },
+                            { href: "/services", label: "Serviços" },
+                            { href: "/projects", label: "Clientes" },
+                            { href: "/testimonials", label: "Relatos" },
                         ].map(({ href, label }) => (
                             <li key={href}>
                                 <Link

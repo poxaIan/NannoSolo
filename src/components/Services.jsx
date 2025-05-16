@@ -1,8 +1,8 @@
 const servicesData = [
   {
     id: 1,
-    title: "Geotecnia de Solos",
-    des: "Estudos completos com ensaios de laboratório e sondagens de campo.",
+    title: "Projetos Asfálticos",
+    des: "Confecção de projetos para CAUQ, CPA, TSD, SMA, Micro, Lama, AAQ/AAF, PMQ/PMF, com cimento asfáltico convencional ou polímero.",
     image1: "/images/service/image1.jpg",
     image2: "/images/service/image2.jpg",
     image3: "/images/service/image3.jpg",
@@ -10,22 +10,57 @@ const servicesData = [
   },
   {
     id: 2,
-    title: "Topografia e Mapeamento",
-    des: "Mapeamento digital e levantamento altimétrico com drones.",
+    title: "Ensaios em Solos",
+    des: "Soluções em SBC, SC, BGS, SBTC, RF e controle in situ com Brucutu, mini CBR, compactação e granulometria.",
     image1: "/images/service/image1.jpg",
     image2: "/images/service/image2.jpg",
     image3: "/images/service/image3.jpg",
     image4: "/images/service/image4.jpg",
   },
+  {
+    id: 3,
+    title: "Ensaios Técnicos",
+    des: "Realização de ISC, compactação, LL/LP, densidade in situ, granulometria por peneiramento e sedimentação.",
+    image1: "/images/service/image1.jpg",
+    image2: "/images/service/image2.jpg",
+    image3: "/images/service/image3.jpg",
+    image4: "/images/service/image4.jpg",
+  },
+  {
+    id: 4,
+    title: "Ensaios Especiais",
+    des: "Abrasão Los Angeles, índice de forma e lameralidade, adesividade, equivalente de areia e impurezas orgânicas.",
+    image1: "/images/service/image1.jpg",
+    image2: "/images/service/image2.jpg",
+    image3: "/images/service/image3.jpg",
+    image4: "/images/service/image4.jpg",
+  },
+  {
+    id: 5,
+    title: "Avaliações e Medições",
+    des: "Deflexão com viga Benkelman, mancha de areia, espessura com sonda rotativa, IRI com perfilôgrafo e IGG.",
+    image1: "/images/service/image1.jpg",
+    image2: "/images/service/image2.jpg",
+    image3: "/images/service/image3.jpg",
+    image4: "/images/service/image4.jpg",
+  },
+  {
+    id: 6,
+    title: "Apoio à Certificação",
+    des: "Retirada de materiais, organização de pastas, montagem de mapas de progressão e apoio à calibração.",
+    image1: "/images/service/image1.jpg",
+    image2: "/images/service/image2.jpg",
+    image3: "/images/service/image3.jpg",
+    image4: "/images/service/image4.jpg",
+  }
 ];
 
 const Services = () => {
   return (
-    <section className='pt-16 pb-20'>
+    <section className='pt-10 pb-10'>
       <div className="container">
         <div className="content">
-          <p className='tagline_text'>Our All Services</p>
-          <h2 className="sub_heading mt-4 max-w-[500px]">We Provide Best Web design services</h2>
+          <h2 className="sub_heading mt-4 max-w-[600px]">Oferecemos os Melhores Serviços</h2>
         </div>
 
         <div className="service_card_container grid grid-cols-1 md:grid-cols-2 gap-8 mt-[50px]">

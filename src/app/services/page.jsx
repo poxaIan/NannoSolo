@@ -6,14 +6,14 @@ import React from 'react'
 const ServicePage = () => {
     return (
         <>
-            <div className="pt-48 pb-20 bg-bgGray">
+            {/* <div className="pt-10 pb-10 bg-bgGray">
                 <div className="container">
                     <h1 className='heading'>Our Services</h1>
                     <div className="navigation">
                         <Breadcrumb />
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
 
 

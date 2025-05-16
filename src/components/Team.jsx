@@ -31,10 +31,10 @@ const members = [
 
 const Team = () => {
   return (
-    <section className='pt-16 pb-20'>
+    <section className='pt-10 pb-10'>
       <div className="container">
         <div className="content">
-          <p className='tagline_text'>Our Team Member</p>
+          <p className='tagline_text'>Membros do Nosso Time</p>
           <h2 className="sub_heading mt-4 max-w-[500px]">Check our awesome team members</h2>
         </div>
 

@@ -5,14 +5,14 @@ import Subscribe from "@/components/Subscribe"
 const Projects = () => {
   return (
     <>
-      <div className=" pt-48 pb-20 bg-bgGray">
+      {/* <div className=" pt-10 pb-10 bg-bgGray">
         <div className="container">
-          <h1 className='heading'>All Project</h1>
+          <h1 className='heading'>Todos os Clientes</h1>
           <div className="navigation">
             <Breadcrumb />
           </div>
         </div>
-      </div>
+      </div>*/}
 
 
       <AllProjects />

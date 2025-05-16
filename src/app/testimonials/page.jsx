@@ -5,7 +5,7 @@ import TestimonialList from '@/components/TestimonialList'
 const Testimonial = () => {
     return (
         <>
-            <div className="team_layout pt-48 pb-20 bg-bgGray">
+            <div className="team_layout pt-10 pb-10 bg-bgGray">
                 <div className="container">
                     <h1 className='heading'>Testimonial List</h1>
                     <div className="navigation">
