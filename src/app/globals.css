@@ -46,4 +46,8 @@
   background: linear-gradient(180deg, #d7f5dc 0%, #d7f5dc 100%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind utilities;

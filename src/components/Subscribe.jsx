@@ -11,7 +11,7 @@ const Subscribe = () => {
                 <p className='font_avenir text-[#8B8B8B] font-medium text-center mt-1'>
                     Deixe seu e-mail e receba informações sobre nossas soluções em solos, pavimentação e controle tecnológico.
                 </p>
-                <div className="imput_container max-w-[600px] mx-auto relative mt-10">
+                <div id="contato" className="imput_container max-w-[600px] mx-auto relative mt-10">
                     <input
                         className='w-full border border-black py-5 px-4 placeholder:text-[#8B8B8B] focus:outline-brandOrange'
                         placeholder='Seu melhor e-mail aqui!'
