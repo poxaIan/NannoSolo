@@ -9,7 +9,7 @@ const SiteNavbar = () => {
     const [mobileActive, setMobileActive] = useState(false);
 
     return (
-        <div className="w-full bg-[#acacad] shadow-sm z-50 relative">
+        <div className="w-full bg-white shadow-sm z-50 relative">
 
             <div className="container mx-auto">
                 {/* NAVITEMS FOR DESKTOP */}

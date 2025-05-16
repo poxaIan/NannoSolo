@@ -7,7 +7,7 @@ const imagesData = [
 
 const Brand = () => {
   return (
-    <div className="py-11 bg-white">
+    <div className="py-0 bg-white">
       <div className="grid grid-cols-2 sm:flex items-center justify-between justify-items-center gap-y-10 container">
         {imagesData.map((brand, index) => (
           <React.Fragment key={brand.id}>
