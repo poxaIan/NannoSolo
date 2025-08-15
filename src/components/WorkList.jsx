@@ -2,15 +2,15 @@ const WorkList = () => {
   const workLists = [
     {
       icon: "/icons/forms.png",
-      title: "Ensaios de Campo",
-      des: "Realizamos sondagens, análises granulométricas, ensaios de compactação e ISC para avaliar as características físicas e mecânicas dos solos com alto rigor técnico.",
+      title: "Projetos Asfálticos",
+      des: "Projetos asfálticos completos para todas as técnicas de pavimentação",
       cta: "Saiba Mais"
     },
     {
       icon: "/icons/icon3.png",
-      title: "Laudos Técnicos",
-      des: "Entregamos relatórios completos com tabelas, gráficos e interpretações técnicas baseadas nas normas vigentes, facilitando decisões assertivas em obra.",
-      cta: "Ver Exemplo de Laudo"
+      title: "Ensaios de Campo",
+      des: "Realizamos sondagens, análises granulométricas, ensaios de compactação e ISC para avaliar as características físicas e mecânicas dos solos com alto rigor técnico.",
+      cta: ""
     },
     {
       icon: "/icons/icon3.2.png",
@@ -43,17 +43,8 @@ const WorkList = () => {
                 {item.des}
               </p>
 
-              <button className="font_avenir text-lg font-normal bg-transparent bg-white duration-300 px-5 py-[15px] mt-6">
-                <span className="flex items-center gap-2">
-                  {item.cta}
-                  <img src="/icons/arrow.png" alt="seta" />
-                </span>
-              </button>
-
 
             </div>
-
-
 
 
           ))}

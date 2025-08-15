@@ -1,13 +1,19 @@
 import Brand from "./Brand";
 import Link from "next/link";
 
-
 const Hero = () => {
-  const title = "Consultoria e Controle Tecnológico";
-  const description = "Atuamos com precisão técnica e soluções inovadoras para garantir a qualidade nas construções públicas e privadas.";
+  const title = (
+    <>
+      <span className="text-brandYellow">Nanno Solo</span>{" "}
+      Gerenciamento de Projetos e Consultoria em Engenharia
+    </>
+  );
+
+  const description =
+    "Oferecemos projetos, consultorias e gerenciamento com foco em controle tecnológico e qualidade técnica para construções públicas e privadas.";
 
   const image1 = "/images/Ensaio de Moldagem de CP de concreto.jpeg";
-  const image2 = "/images/Reciclagem com adição de Brita.jpeg";
+  const image2 = "/images/Reciclagem com adicao de Brita.jpg";
   const image3 = "/images/ensaio piche.jpg";
   const image4 = "/images/ensaio_calda_cimento.jpeg";
 
@@ -17,10 +23,10 @@ const Hero = () => {
       <div className="bg-[#000000] py-10" style={{ color: "#acacad" }}>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center container mx-auto">
           <div className="content_container mt-5 md:mt-0">
-            <h1 className="sm:leading-[65px] leading-[50px] text-4xl sm:text-[50px] font-bold font_poppins max-w-[550px] text-left">
+            <h1 className="sm:leading-[65px] leading-[50px] text-3xl sm:text-[40px] font-bold font_poppins max-w-[550px] text-left">
               {title}
             </h1>
-            <p className="font_avenir text-lg font-normal max-w-[550px] text-left mt-3 sm:mt-0" style={{ color: "#ffffff" }}>
+            <p className="font_avenir text-lg font-normal max-w-[600px] text-left mt-2 sm:mt-0" style={{ color: "#ffffff" }}>
               {description}
             </p>
             <Link href="/services">
@@ -28,7 +34,6 @@ const Hero = () => {
                 Conheça Nossos Serviços
               </button>
             </Link>
-
           </div>
 
           <div className="w-full order-first md:order-last lg:px-4">
@@ -49,7 +54,6 @@ const Hero = () => {
         <Brand />
       </div>
     </section>
-
   );
 };
 

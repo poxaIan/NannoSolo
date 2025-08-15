@@ -7,30 +7,39 @@ import { MdEmail } from "react-icons/md";
 const members = [
   {
     id: 1,
+    name: "Cleber Gusmão B.",
+    formation: "Engenheiro Civil ",
+    image: "/images/Team/cleber.png",
+    linkedin: "https://www.linkedin.com/in/cleber-gusm%C3%A3o/",
+    instagram: "",
+    email: ""
+  },
+  {
+    id: 2,
     name: "Ian Souza",
     formation: "Engenheiro de Computação",
     image: "/images/Team/ian.jpg",
     linkedin: "https://www.linkedin.com/in/ian-miranda-gomes-de-souza-3257a1222/",
     instagram: "https://www.instagram.com/ian_mgs/",
-    email: "mailto:ian.mgsouza@gmail.com"
-  },
-  {
-    id: 2,
-    name: "Maria Oliveira",
-    formation: "Arquiteta Urbanista",
-    image: "/images/joao.png",
-    linkedin: "#",
-    instagram: "#",
-    email: "mailto:maria@email.com"
+    email: ""
   },
   {
     id: 3,
-    name: "Carlos Santos",
-    formation: "Engenheiro Civil",
-    image: "/images/joao.png",
-    linkedin: "#",
-    instagram: "#",
-    email: "mailto:carlos@email.com"
+    name: "Luciano Roberto Messias",
+    formation: "Preposto de contrato/Coordenador de Projetos",
+    image: "/images/Team/Luciano.jpeg",
+    linkedin: "https://www.linkedin.com/in/lucianot%C3%A9cnicodeinspe%C3%A7%C3%A3ol%C3%ADderdeequipe/?originalSubdomain=br",
+    instagram: "",
+    email: ""
+  },
+  {
+    id: 4,
+    name: "Nilo Fabiano Flores Silva",
+    formation: "",
+    image: "/images/Team/image.png",
+    linkedin: "",
+    instagram: "",
+    email: ""
   },
 ];
 
@@ -44,7 +53,7 @@ const Team = () => {
           <h2 className="font-bold font_poppins text-4xl text-center text-white mt-4 ">Conheça Nossa Equipe</h2>
         </div>
 
-        <div className="team_member grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-8 mt-16">
+        <div className="team_member grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {
             members.map(member =>
               <div key={member.id} className="member shadow-teamShadow rounded-[20px] bg-white">

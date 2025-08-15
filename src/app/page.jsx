@@ -10,7 +10,6 @@ export default function Home() {
       <Hero />
       <WorkList />
       <StatList />
-      <FeatureProject />
       <Subscribe />
     </>
   )
