@@ -7,8 +7,8 @@ const Hero = () => {
   const description = "Atuamos com precisão técnica e soluções inovadoras para garantir a qualidade nas construções públicas e privadas.";
 
   const image1 = "/images/Ensaio de Moldagem de CP de concreto.jpeg";
-  const image2 = "/images/Densidade máxima em CBUQ - Densímetro não nuclear.jpeg";
-  const image3 = "/images/Determinação de IRI com o equipamento Merlin.jpg";
+  const image2 = "/images/Reciclagem com adição de Brita.jpeg";
+  const image3 = "/images/ensaio piche.jpg";
   const image4 = "/images/ensaio_calda_cimento.jpeg";
 
   return (
